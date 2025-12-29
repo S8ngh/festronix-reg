@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Festronix 2025 | Cyberpunk Tech Fest</title>
 
+  <!-- Futuristic Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Neon Background -->
+  <div class="neon-bg"></div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1 class="neon-title">FESTRONIX</h1>
+    <p class="hero-sub">Future • Code • Innovation</p>
+    <p id="countdown" class="countdown"></p>
+  </section>
+
+  <!-- FORM CARD -->
+  <section class="card">
+    <h2>FESTRONIX 2025</h2>
+    <p class="tagline">Cyberpunk Registration Portal</p>
+
+    <form
+      method="POST"
+      action="https://docs.google.com/forms/d/e/1FAIpQLSeAyL5E7hCQjmqxwxycBr8OFojlFj1DmtQGscXWV3RqQGdbMg/formResponse"
+      target="hidden_iframe"
+    >
+      <input type="text" name="entry.1642203296" placeholder="Full Name" required>
+      <input type="text" name="entry.890110461" placeholder="Roll Number" required>
+      <input type="text" name="entry.1293026311" placeholder="Branch" required>
+
+      <select name="entry.778213549" required>
+        <option value="">Select Year</option>
+        <option>1st Year</option>
+        <option>2nd Year</option>
+        <option>3rd Year</option>
+        <option>4th Year</option>
+      </select>
+
+      <input type="email" name="entry.1534799695" placeholder="Email" required>
+      <input type="tel" name="entry.1316360657" placeholder="Phone Number" required>
+
+      <select name="entry.1970853861" required>
+        <option value="">Select Event</option>
+        <option>Coding Contest</option>
+        <option>Robo Race</option>
+        <option>Tech Quiz</option>
+        <option>Poster Presentation</option>
+      </select>
+
+      <button type="submit">REGISTER</button>
+    </form>
+
+    <p id="successMsg"></p>
+  </section>
+
+  <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+  <script src="script.js"></script>
+</body>
+</html>
